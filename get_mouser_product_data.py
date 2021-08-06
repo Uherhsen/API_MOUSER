@@ -11,12 +11,12 @@ import json
 
 class GetMouserProductData():
     
-    # HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 OPR/74.0.3911.107',
-    #         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    #         'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'}
+    #HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 OPR/74.0.3911.107',
+      #       'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        #     'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'}
     
     HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36',
-                'accept': '*/*', 'accept-language':'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7','content-type': 'text/plain','origin': 'https://ru.mouser.com','referer': 'https://ru.mouser.com/'}
+               'accept': '*/*', 'accept-language':'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7','content-type': 'text/plain','origin': 'https://ru.mouser.com','referer': 'https://ru.mouser.com/'}
 
     '''Инициализация переменной-индивидуального ключа для Mouser API'''
     def __init__(self, api_key):

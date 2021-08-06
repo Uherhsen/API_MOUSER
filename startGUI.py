@@ -1058,7 +1058,7 @@ def instructions():
 # = = = = = = = = = = = =  = = = = = !!! TKINTER !!! = = = = = = = =  = = = = = = == = = = = = =  = = = = = = = >
 #=========================================================================================
 root =Tk()
-root.title("MOUSER-PROSHMONAUSER") # Заголовок окна
+root.title("ALE-X-SEY") # Заголовок окна
 root["bg"] = "SlateGray1" 
 # верхняя менюха
 mainmenu = Menu(root) 
