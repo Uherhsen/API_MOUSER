@@ -152,6 +152,8 @@ class GetData:
                 parameters.pop('Ограничения на доставку','Нет ключа')
                 parameters.pop('Размер фабричной упаковки','Нет ключа')
                 parameters.pop('Чувствительный к влажности','Нет ключа')
+                parameters.pop('Размер фабричной упаковкиРазмер фабричной упаковки','Нет ключа')
+                parameters.pop('Тип ссылки','Нет ключа')
                 #parameters.pop('Тип','Нет ключа')
                 # Преобразуем словарь в текст
                 #
@@ -170,7 +172,12 @@ class GetData:
             except IndexError:
                 print('Нет ссылки на фото')
                 line_data["Photo"] = None
-               
+            forced_wait=2
+            print('Принудительное ожидание ', forced_wait, 'секунд:\n')
+            for sec in range(forced_wait):
+                print( sec + 1, 'сек.')
+                time.sleep(1)   # Затормозим процесс для стабильности
+                
             return line_data
             
             
